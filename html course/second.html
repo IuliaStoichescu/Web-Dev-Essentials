@@ -42,14 +42,88 @@
     <form action="/burgers">
 
         <p><label for="user">Enter username</label>
-            <input id="user" type="text" placeholder="you know what goes here">
+            <!-- name is used to send the data to the server file:///C:/burgers?username=iuli - we are sending a get request-->
+            <input id="user" type="text" placeholder="you know what goes here" name="username">
         </p>
         <p> <input type="password" placeholder="secret password"></p>
         <p> <input type="color"></p>
+        <!-- max min step also for number -->
         <p> <input type="number"></p>
         <p> <input type="submit"></p>
         <button type="button">Click me &lt;3</button>
     </form>
+    <hr>
+    <p>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q" placeholder="Type anything you want :)">
+        <!-- radio is pretty much the same but in a list of options you can select only one -->
+        <button>Search Reddit!!</button>
+        <input type="checkbox" name="cb" id="checkbox" checked>
+        <label for="checkbox">My only purpose is to learn :3</label>
+    </form>
+    </p>
+    <hr>
+    <p>
+        <!-- Name is different for each search engine -->
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" placeholder="Type anything you want :)">
+        <button>Search YTT!!</button>
+        <p>
+        <h2>Are you sure you know what you are doing?</h2>
+        <!-- Could ve used br for break down instead of table -->
+        <div>
+            <!-- Make them connected by giving them the same name attribute -->
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="radio" name="question" id="que" value="thiswhatyousee">
+                            <label for="que">Yes</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- whatever the v alue is it will be sent to the server - immporant to send a value -->
+                        <td> <input type="radio" name="question" id="que1">
+                            <label for="que1">No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="question" id="que2">
+                            <label for="que2">Maybe :')</label>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </p>
+    </form>
+    </p>
+    <p>
+        <label for="hhe">Choose</label>
+        <select name="hehe" id="hhe">
+            <option value="first" selected>First</option>
+            <option value="second" selected>Second</option>
+        </select>
+    </p>
+    <p>
+        <label for="cheese">Amount of cheese</label>
+        <input type="range" id="cheese" min="1" max="10" step="7" name="cheese_level" value="75">
+    </p>
+    <!-- Textarea also exists - can have rows collumns -->
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter first name</label>
+        <input type="text" name="first" id="first" required>
+        <br>
+        <label for="username1">Enter user</label>
+        <input type="text" name="username1" id="username1" minlength="5" maxlength="20" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- Pattern - regular expressions -->
+    <a href="finalEx.html">Go to final exercise</a>
 </body>
 
 </html>
