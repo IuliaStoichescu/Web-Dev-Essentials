@@ -1,0 +1,88 @@
+h1,
+h2 {
+    color: rgb(109, 45, 143);
+    width: 50;
+    /* box is only 50% of the page */
+    text-align: justify;
+    /* The inline contents are justified. 
+    Spaces out the content to line up its left 
+    and right edges to the left and right edges 
+    of the line box, except for the last line. */
+    font-weight: bold;
+    line-height: 2.5;
+    letter-spacing: 10px;
+    text-decoration: magenta underline;
+    /* i can put wavy*/
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* comma indicates next choice */
+}
+
+body {
+    background-color: #ffc8dd;
+}
+
+/* #id to customize */
+#press {
+    background-color: #a2d2ff;
+    color: azure;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    /* background - you can set gradient */
+    color: #5c3d6d;
+}
+
+a {
+    text-decoration: none;
+    /* to remove the blue underline text */
+}
+
+/* dont use pixels for responding sites */
+
+* {
+    /* universal selector */
+}
+
+.tag {
+    background-color: #cdb4db;
+}
+
+/* Descendant selector : li a {color : teal} 
+design the elements that are nested or descendants of a tag
+only a's are styled
+/* Adject selectors : h1+p{} select only 
+the pargraph that are imme4diately preceded by a h1 */
+/* Direct descendant/child : div>li{} - selects only the li
+that are direct children of a div element*/
+
+/* Attribute selector is next */
+input[type="text"] {
+    background-color: aquamarine;
+}
+
+section[class="post"] {
+    background-color: #5c3d6d;
+}
+
+/* pseudo classes - keywordx added to a selector
+that specifies a special state of the selected element
+*/
+a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+button:hover {
+    color: aliceblue;
+    background-color: #5c3d6d;
+}
+
+/* active,checked, nth-of-type(4n) */
+/* pseudo elements - first line, selection etc check mdn*/
+h1::first-letter {
+    font-size: 20px;
+}
+
+/* specificity refers to style conflicts id>class>element */
