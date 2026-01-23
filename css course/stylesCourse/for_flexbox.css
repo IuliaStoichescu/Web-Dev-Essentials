@@ -1,0 +1,44 @@
+body {
+   font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+   text-align: center;
+}
+
+#container {
+   background-color: #003049;
+   width: 90%;
+   height: 500px;
+   margin: 0 auto;
+   border: 5px solid #003049;
+   display: flex;
+   /* flex box propreties on this container */
+   /* x axis - main axis, y axis - cross axis*/
+   flex-direction: row;
+   /* main axis direction*/
+   /* justify-content: flex-start; */
+   /* where they get piled out */
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   /* for cross axis */
+   /* align-content: space-between; */
+   /* space between the cross axis works if we have flex wrap wrap*/
+}
+
+#container div {
+   width: 200px;
+   height: 200px;
+   text-align: center;
+   font-size: 4em;
+   align-items: flex-end;
+}
+
+div:nth-of-type(4) {
+   align-self: flex-end;
+}
+
+/* flex-basis - defines an initial size of an element before addidtional space is distributed */
+/* flex-grow - controls the amount of available space an element should take up */
+/* flex-shrink - if items are larger than the container, they shrink accordingly  */

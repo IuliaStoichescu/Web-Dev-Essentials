@@ -1,0 +1,88 @@
+.circle {
+   width: 300px;
+   height: 300px;
+   background-color: brown;
+   transition: 2s;
+   /*transition: background-color 2s 1s(delay)
+   transition: background-color 2s , border-radius 2s
+   transition timing function
+   */
+}
+
+h1 {
+   color: white;
+}
+
+body {
+   background-color: rgb(25, 25, 40);
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   font-family: 'Playwrite England Joined Guides';
+}
+
+.circle:hover {
+   background-color: aqua;
+   border-radius: 50%;
+}
+
+div {
+   margin: auto;
+   display: inline-block;
+}
+
+#special {
+   background-color: rgba(240, 248, 255, 0.007);
+   border: 1px solid orange;
+   color: orange;
+   padding: 10px 20px 10px 20px;
+   transition: 1s;
+}
+
+#special:hover {
+   border: 1px solid rgb(255, 0, 140);
+   color: rgb(255, 0, 140);
+   box-shadow: 0 0.5em 0.5em -0.4em rgb(255, 0, 140);
+   transform: translateY(-0.5em);
+   cursor: pointer;
+}
+
+section div {
+   height: 100px;
+   width: 100px;
+   background-color: turquoise;
+   margin: 20px 0;
+   transition: margin-left 3s;
+}
+
+section:hover div {
+   margin-left: 500px;
+}
+
+div:nth-of-type(1) {
+   transition-timing-function: ease-in;
+}
+
+div:nth-of-type(2) {
+   transition-timing-function: ease-out;
+}
+
+div:nth-of-type(3) {
+   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+div:nth-of-type(4) {
+   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/*i can also use transform , transform-origin*/
+/* with margin auto you put it in the center */
+
+#something {
+   width: 80%;
+   height: 800px;
+   margin: auto;
+   background-image: url(https://brownvethospital.com/wp-content/uploads/2023/12/do-you-need-to-bathe-cats-scaled.jpeg);
+   background-size: cover;
+   background-position: left;
+}

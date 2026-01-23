@@ -1,6 +1,7 @@
 h1,
 h2 {
-    color: rgb(109, 45, 143);
+    color: rgb(109, 45, 143) !important;
+    /* overrides other declarations */
     width: 50;
     /* box is only 50% of the page */
     text-align: justify;
@@ -86,3 +87,15 @@ h1::first-letter {
 }
 
 /* specificity refers to style conflicts id>class>element */
+p::selection {
+    background-color: yellow;
+    color: black;
+}
+
+/* applies when text is selected */
+
+button,
+input {
+    color: rgb(109, 45, 143) inherit;
+    /* inherits from parent */
+}
