@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+   <title>Score keeper</title>
+</head>
+<style>
+   .winner {
+      color: green;
+   }
+
+   .loser {
+      color: red;
+   }
+</style>
+
+<body>
+   <div class="container">
+      <div class="columns">
+         <div class="column is-half is-offset-one-quarter">
+            <div class="card">
+               <div class="card-image">
+                  <figure class="image is-1by0">
+                     <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Darts_in_a_dartboard.jpg/1280px-Darts_in_a_dartboard.jpg"
+                        alt="Placeholder image" />
+                  </figure>
+               </div>
+               <br>
+               <p class="title " style="text-align: center;">Score keeper</p>
+               <hr>
+               <footer class="footer" style="background-color: white;">
+                  <div class="content has-text-centered">
+                     <div class="columns">
+                        <div class="column">
+                           <h1><span id="p1Score" class="is-size-1 has-text-weight-semibold">0</span> to <span
+                                 id="p2Score" class="is-size-1 has-text-weight-semibold">0</span>
+                           </h1>
+                           <div class="select is-info">
+                              <select name="" id="playto">
+                                 <option value="5">5</option>
+                                 <option value="10">10</option>
+                                 <option value="15">15</option>
+                                 <option value="20">20</option>
+                                 <option value="25">25</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <button id="p1Btn" class="button is-primary is-dark">+1 Player One</button>
+                     <button id="p2Btn" class="button is-info is-dark">+2 Player Two</button>
+                     <button id="reset" class="button is-danger is-dark">Reset</button>
+                  </div>
+               </footer>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="app.js"></script>
+</body>
+
+</html>
