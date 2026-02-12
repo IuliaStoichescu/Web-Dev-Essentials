@@ -1,0 +1,21 @@
+//ls - list the current content of the directory
+//pwd - shows the path to the directory
+//cd - change directory
+//absolute path - i can type command from any folder from a machine / -root directory
+//cd ~ goes to home 
+//relative path - the one that is inside a specific directory
+//man help command
+//touch create a file
+//rm remove files
+//rmdir remove directories
+//rm -rf remove directory
+
+//node - javascript runtime
+//REPL 
+//node command
+//global command
+//node app.js - run file from terminal
+//process.version or .release 
+//process.cwd() - path
+//process.argv
+//node greet.js arg1 arg2 then in the file you write hello process.argv and then it displays them

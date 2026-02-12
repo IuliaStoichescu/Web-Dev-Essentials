@@ -1,0 +1,27 @@
+<%- include('partials/head')%>
+
+   <body>
+      <%- include('partials/navbar')%>
+         <div class="container">
+            <h1>Subreddit: <%= name %> ||| Subscribers: <%= subscribers%>
+            </h1>
+            <h2>
+               Description:
+               <%= description%>
+            </h2>
+            <hr>
+            <% for(let post of posts){%>
+               <ol>
+                  <ul>
+                     <li>
+                        Title: <%=post.title%>
+                     </li>
+                     <li> Content: <%=post.content%>
+                     </li>
+                  </ul>
+               </ol>
+               <%}%>
+         </div>
+   </body>
+
+   </html>
