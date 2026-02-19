@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Edit</title>
+</head>
+
+<body>
+   <h1>Edit a product</h1>
+   <form action="/products/<%=product._id%>?_method=PUT" method="post">
+      <label for="product name">Name</label>
+      <input type="text" name="name" id="product name" value="<%= product.name %>">
+      <!-- by value u see the already populated field -->
+      <label for="price">Product Price </label>
+      <input type="number" name="price" id="price" value="<%= product.price %>">
+      <label for="category">Select Category</label>
+      <select name="category" id="category">
+         <option value="fruit" <%=product.category==='fruit' ? 'selected' : '' %>>Fruit</option>
+         <option value="vegetable" <%=product.category==='vegetable' ? 'selected' : '' %>>Vegetable</option>
+         <option value="dairy" <%=product.category==='dairy' ? 'selected' : '' %>>Dairy</option>
+      </select>
+      <button>Edit</button>
+   </form>
+   <a href="/products">Go back</a>
+</body>
+
+</html>

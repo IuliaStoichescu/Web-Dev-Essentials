@@ -1,0 +1,26 @@
+mongosh
+show db
+use nameOfDatabase //create
+db
+show collections
+
+db.newCollection.insert({...})
+db.collection.find()
+
+ db.dogs.insert([{name:"Steluta",age:7,breed:"Black Golden Retriever",catFriendly:false},{name:"Rexi",age:16,breed:"Belgian Shepperd", catFriendly:true}])
+ db.cats.find({age:10})//finds all cats with the age of 10
+ //.findOne()
+ db.dogs.updateOne({name:"Luna"},{$set {age:6, breed:"Blala"}})
+ //.updateMany()
+ //$currentDate:{lastModified:true}
+//.replaceOne()
+//.deleteOne()
+//.deleteMany()
+//access nested property : 'property.name' : value
+//aditional operators ===>>>
+db.inventory.find({qty:{$gt:20}})
+db.dogs.find({breed:{$in: ['Mutt','Corgi']}})
+$ne - not queal
+$nin
+$not and or
+//mongoose object data mapper, provides ways for us to model out our apps data and define a schema
