@@ -1,0 +1,10 @@
+authentification vs authorization
+
+storing passwords - never store as text or how it is 
+
+The solution : Hashing - we run the password through a hashing function and then store
+the result into the database
+
+One way function
+
+We will use Bcrypt
