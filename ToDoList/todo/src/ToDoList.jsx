@@ -56,9 +56,9 @@ export default function ToDoList() {
          return [...prevTodo, { text: text, id: uuid(), completed: false }]
       })
    }
-
    return (
-      <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+
+      <List sx={{ width: '100%', maxWidth: 500, bgcolor: 'background.paper', margin: 'auto', color: '#751d46' }}>
          {todo.map((value) => {
             return <ToDoItem
                todo={value}

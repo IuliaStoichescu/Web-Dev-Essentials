@@ -16,12 +16,13 @@ export default function ToDoForm({ adding }) {
       setText("");
    }
    return (
-      <ListItem>
+      <ListItem sx={{ color: '#751d46' }}>
          <form onSubmit={handleSubmit}>
-            <TextField id="standard-basic" label="Add To Do" variant="standard" onChange={handleChange} value={text}
+            <TextField sx={{ marginLeft: '100px', marginTop: '1vh' }}
+               id="standard-basic" label="Add To Do" variant="standard" onChange={handleChange} value={text}
                InputProps={{
-                  endAdornment: <InputAdornment position="end">
-                     <IconButton type='submit'
+                  endAdornment: <InputAdornment position="end" >
+                     <IconButton type='submit' sx={{ color: '#751d46' }}
                         aria-label='create toDo'>
                         <Create />
                      </IconButton>

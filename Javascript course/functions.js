@@ -62,7 +62,8 @@ const myMath = {
 myMath.square(2);
 myMath.cube(68);
 
-//this - inside an object in a method, to call other attributes , have access to the data in an object
+//this - inside an object in a method, to call other attributes , 
+// have access to the data in an object
 //window.function
 //it also exists alert
 

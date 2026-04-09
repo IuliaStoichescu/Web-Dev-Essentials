@@ -37,6 +37,7 @@ parseInt(); // converts a string into an integer
 
 // iterate through arrays with for of
 const names = ["iuli", "andre", "dana", "rexi", "steluta", "luna", "july", "clemi"];
+//for(let [indx,name] of name.entries())
 for (let n of names) {
    console.log(`My family: ${n}`);
 }
